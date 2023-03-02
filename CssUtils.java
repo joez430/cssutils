@@ -41,14 +41,6 @@ public class CssUtils {
                         inComment = true;
                         i++;
                     }
-                    // check if we are currently in a comment and the next character is a forward slash, indicating the end of a single-line comment
-                    else if (inComment && i < css.length() - 1 && css.charAt(i + 1) == '/') {
-                        // set the inComment flag to false
-                        inComment = false;
-                        // add a line break and indentation after the comment
-                        unminified.append(c).append('\n').append(getIndent(indent));
-                        i++;
-                    }
                     // if none of the above conditions are true, just append the forward slash to the unminified string
                     else {
                         unminified.append(c);
