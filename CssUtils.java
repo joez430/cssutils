@@ -1,6 +1,3 @@
-package com.webexchange.utils;
-
-
 import org.apache.commons.lang3.StringUtils;
 
 /**
